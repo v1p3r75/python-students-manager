@@ -1,5 +1,9 @@
 #!/bin/env python
 
-from _class.Student import Student
+from _class.Bulletin import Bulletin
+from helpers.functions import show_banner
 
-student = Student()
+
+if __name__ == '__main__':
+    show_banner()
+    student = Bulletin()

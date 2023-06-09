@@ -138,11 +138,11 @@ class Bulletin:
             print("o Matricule : 12412923\t\t\t\tAnnee : 22-23\n");
             print("o Licence : 1\t\t\t\t\tSemestre: 2");
             symbole(33, "--");
-            print("o Matieres : \n");
+            print("o Matieres : ");
             for i in constants.SUBJECTS:
-                print(i + "\t : ");
-                for j in student['subjects']:
-                    print(str(j) + " ");
+                print("\n" + i + "\t : ", end="\t");
+                for j in student['subjects'][constants.SUBJECTS.index(i)]:
+                    print(j, end="\t");
                 
             symbole(33, "--");
             print(f"\no Moyenne Generale : {student['moyTotal']} \no Rang : {str(self.students_copy.index(student) + 1)}e\n")

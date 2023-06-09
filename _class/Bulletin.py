@@ -156,7 +156,7 @@ class Bulletin:
 
     
             
-    def getMention(self, number):
+    def getMention(self, number) -> str:
 
         if number < 3: return "Nul"
         elif number >= 3 and number <= 6 : return  "Mediocre"
@@ -168,7 +168,7 @@ class Bulletin:
         elif number >= 18  and number <= 20 : return "Excellent"
 
     
-    def decision(self, moy):
+    def decision(self, moy) -> str:
 
         if moy < 10:
             return "Redouble"
